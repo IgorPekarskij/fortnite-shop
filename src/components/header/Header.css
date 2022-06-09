@@ -1,0 +1,11 @@
+nav {
+    position: fixed;
+    z-index: 2;
+}
+nav .nav-wrapper {
+    background-color: indigo;
+}
+
+nav .logo-image {
+    padding: 0.3rem;
+}

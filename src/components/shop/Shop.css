@@ -1,0 +1,35 @@
+
+div.container.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    column-gap: 6%;
+    min-height: calc(100vh - 54px - 60px);
+    z-index: 5;
+    background-color: transparent;
+    padding-top: 70px;
+}
+
+.card-icon {
+    position: fixed;
+    top: 80px;
+    right: 50px;
+    color: snow;
+    border: 1px solid snow;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: indigo;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.card-icon>span {
+    background-color: green;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    line-height: 1;
+    padding: 0 0.3rem;
+}
