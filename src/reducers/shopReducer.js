@@ -43,6 +43,11 @@ export function shopReducer(state, { type, payload }) {
                 ...state,
                 cart: state.cart.filter((item) => item.id !== payload.id),
             };
+        case TYPES.SET_LOCAL_CART:
+            return {
+                ...state,
+                cart: payload,
+            };
         case TYPES.UPDATE_GOODS_COUNT:
             return {
                 ...state,

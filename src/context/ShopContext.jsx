@@ -30,8 +30,13 @@ export const ShopContextProvider = (props) => {
     value.updateGoodsQuantity = (id, count) => {
         dispatch({ type: TYPES.UPDATE_GOODS_COUNT, payload: { id, count } });
     };
+
     value.removeFromCart = (id, count) => {
         dispatch({ type: TYPES.REMOVE_FROM_CART, payload: { id } });
+    };
+
+    value.setLocalCart = (cart) => {
+        dispatch({ type: TYPES.SET_LOCAL_CART, payload: cart });
     };
 
     return (
